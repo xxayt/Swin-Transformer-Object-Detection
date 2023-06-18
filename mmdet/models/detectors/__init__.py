@@ -30,7 +30,6 @@ from .two_stage import TwoStageDetector
 from .vfnet import VFNet
 from .yolact import YOLACT
 from .yolo import YOLOV3
-from .convnext import ConvNeXt
 
 __all__ = [
     'ATSS', 'BaseDetector', 'SingleStageDetector',
@@ -39,5 +38,5 @@ __all__ = [
     'RetinaNet', 'FCOS', 'GridRCNN', 'MaskScoringRCNN', 'RepPointsDetector',
     'FOVEA', 'FSAF', 'NASFCOS', 'PointRend', 'GFL', 'CornerNet', 'PAA',
     'YOLOV3', 'YOLACT', 'VFNet', 'DETR', 'TridentFasterRCNN', 'SparseRCNN',
-    'SCNet', 'RepPointsV2Detector', 'RepPointsV2MaskDetector', 'ConvNeXts'
+    'SCNet', 'RepPointsV2Detector', 'RepPointsV2MaskDetector'
 ]
