@@ -1,0 +1,6 @@
+# Training: train a detector with pre-trained models
+python tools/train.py configs/convnext/cascade_mask_rcnn_convnext_tiny_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_coco_in1k.py --cfg-options model.pretrained=./pretrain/convnext_tiny_1k_224.pth
+
+
+# Inference:
+python tools/test.py configs/convnext/cascade_mask_rcnn_convnext_tiny_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_coco_in1k.py <DET_CHECKPOINT_FILE> --eval bbox segm
