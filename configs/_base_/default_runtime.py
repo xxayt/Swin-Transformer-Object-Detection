@@ -3,7 +3,8 @@ checkpoint_config = dict(interval=1)
 log_config = dict(
     interval=50,
     hooks=[
-        dict(type='TextLoggerHook'),
+        dict(type='CustomizedTextLoggerHook'),  # for ConvNeXt
+        # dict(type='TextLoggerHook'),  # src
         # dict(type='TensorboardLoggerHook')
     ])
 # yapf:enable
